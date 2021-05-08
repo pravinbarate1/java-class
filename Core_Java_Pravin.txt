@@ -1,0 +1,395 @@
+Core Java
+===========================================
+
+Apr-23-2021
+===============================
+Standalone Application:- 
+    Any prog runs in the context of local disk, whose results are not sharable.
+
+Distributed Application:- 
+      Those applications which runs in the context of browerand whose results are sharable across the globe.
+
+    Client-Server Architecture:-
+      Tier 1:-
+            -> set of client programs
+            -> Set of server programs
+      Tier 2:-
+            -> Set of client programs
+            -> Set of server programs
+            -> DB layer
+      Tier 3:-
+            -> Set of client programs
+            -> Set of server programs
+            -> DB layer
+            -> Cluster Setup Node
+      N Tier:- 
+            -> Set of client programs
+            -> Set of firewall programs
+            -> Set of server programs
+            -> DB layer
+            -> Cluster Setup Node
+
+e.g 
+  Server S/w :-
+    Tom Cat   - Apache
+    Weblogic  - BEA Corporation
+    Websphere - IBM
+    glassfish - Sun Microsystem
+    Oracle 10g - Oracle Corporation
+
+
+Java Release Types:-
+  J2SE -> Java 2 Standard Edition   -> Desktop Applicaiton
+  J2EE -> Java 2 Enterprise Edition -> Web Application/Entrerprise Application
+  J2ME -> Java 2 Mobile Edition     -> Mobile Applications.
+
+Protocol:-
+
+  HTTP:-
+     -> HTTP comes under TCP (Transmission Control Protocol).
+     -> HTTP is one of the acknowledgement oriented protocol.
+     -> HTTP is one of the stateless protocol.
+  FTP:-
+     -> FTP comes under UDP(User Datagram Protocol).
+     -> FTP is one of the non-acknowledgement oriented protocol.
+     -> FTP is one of the stateful protocol.
+
+
+Features/Busswords of Java:-
+=========================================================
+1. Simple
+2. Platform Independent
+3. Architectural Neutral
+4. Portable
+5. Multithreaded
+6. networked
+7. Distributed
+8. High Performance
+9. Robust
+10. Dynamic
+11. Interpreted
+12. Secured
+13. OOPL (Object Oriented Prog. Lang.)
+
+1. Simple:-
+     Java is one of the simple programming language because of the following points:-
+      a. Java Programming does not support a complex concept called pointers.
+      b. Memory Allocation :- Java programming execution environment containes inbuilt "garbage collection" program for automatic memory management for strengthaning the performance of Java applications.
+          GC -> internal algorithm (mark and sweep)
+
+        * Define a Garbage Collector:-
+                   Garbage collector is one of the background system java program which s running internally along with regular Java program for collecting unused/unreferenced memory space for improving the performance our Java applications.
+                   Note:- Java Programming does not support destructor concept is place of destructors we have GC program.
+24-Apr-2021
+===================
+
+2. Platform Independent:-
+    a. The language must have data types & they must have take same amount of memory space on every platform.
+    b. The language must contain some special internal programs which will convert from one format of one OS to another format of another OS.
+
+3. Architectureal Neutral:-
+    - An application is said to be architectural neutral if an only if the application runs on every processor without considering their architectures and vendors(provider).
+    - A language is said to be architectural neutral, it has to satisfy the following property.
+       - The s/w must have the special internal programs which will convert the factors of one processor to factors of another processor.
+       - The language like c, c++ etc. are considered architectureal dependent because the above property is not satisfied.
+
+4. Portable:-
+   - A portable application is one which will run on every operating system and on every processor without considering their vendors and architectures.
+     - The applications of c, c++, pascal etc. are treated as non portable applications.    
+     - All the Java applications are treated as portable applications.
+          According Sun Microsystem.
+          Portability = Platform Independent + Architectural Neutral
+
+5. Multithreaded:-
+   - Multithreading is one of the distinct facility of Java Programming.
+   - The basic aim of multithreading is that to achieve concurrent excution.
+   - A flow of control is konwn as thread.
+   - The basic usage of thread is to execute user/programmer defined functions.
+
+    - In Java programming multithreading applications are deveoped by following Packages.
+        a. java.lang.Thread(class)
+        b. java.lang.Runnable (Interface)
+
+e.g:- thread/execution flow main method
+
+  public static void main(String [] args {
+    jflasjflasjf
+  }
+ 
+6.Networked:-
+   - Java has introduced the capability to develope networked applications, web applications.
+   - Java has J2SE and it has capability or API or pacakges to develope network applicaionts.
+     e.g - java.net.*;  ServerSocket ss=new ServerSocket(6666);  
+
+26-Apr-2021
+=====================
+7. Distributed :-
+   According to the industry standards, in Java realtime applications are classified into two types they are
+    1. Centralized Applications
+    2. Distributed Applications
+
+    When we run the Java Program, for executing the logic of our Java program there exist one thread known as foreground thread. To monito the status of foreground thread, there exist one more background Java Program known as Garbage Collector.
+    For executing garbage collector there exist on thread know as background thread hence in Java programming execution environment there exist above two threads.
+
+8. High Performance:-
+   Java is one of the high performance programming language because of the following reasons
+    1. Because of magic of bytecode.(We know that bytecode is the set of optimized instructions generated by the Java compiler during compilation phase and it is more faster than ordinary pointer code.)
+    2. Because of magic of GC , automatic memory mangement is taken care.(We know that GC is the one of the system background Java program runs along with our regular Java program for collecting unused memroy space for improving the performance of Java applications.)
+    3. Java programming is free from pointers so that a Java program can develop an application as early.
+
+9. Robust(Strong) :-
+    When we write any program in any programming lang. we come across various types of errors.Broadly errors are classified into two types they are:
+     1. Compile time errors:-        
+     2. Runtime errors.
+    
+10. Dynamic :-
+     Types of memory allocation
+      1. Static memory allocation.
+      2. Dynamic memory allocation.
+
+     - Java only supports dynamic memory allocation.
+
+11. Interpreted :-
+   :> javac Test.java   -> compilation
+   :> java Test         -> interpretion
+
+    Java supports both compilation as well as interpretation.
+
+    JIT(Just In Time) is the set of programs developed by Sun Microsystem and added into JVM to speed up the interpretation phase by reading the entire section of the bytecode and converting it into native understanding form of OS.
+
+12. Secured:-
+    - No pointers
+    - Class file and robust bytecode.
+    - Automatic memory management.
+    - "java.security"
+
+13. OOPL (Object Oriented Prog. Lang.):-
+    Class
+    Object
+    Interface
+    OOPS concepts(Polymorphism, Abstraction, Encapsulation, Inheritance)
+       
+27-Apr-2021
+===========================================
+Datatypes in Java:-
+   1. Integer category datatypes
+   2. Float
+   3. Character.
+   4. boolean.
+
+   1. Integer Category:
+      Datatype	 Size		Range
+      ----------------------------------------------------------
+      byte       1 byte  	+127 to -128	  		e.g byte a;
+      short	 2 byte		+32767 to -32768  		e.g short a;
+      int 	 4 byte 	+2147483647 to -2147483647  	e.g int a;
+      long       8 byte         +9,223,372,036,854,775,808 to -9,223,372,036,854,775,807  e.g long a;
+
+   2. Float:
+     Datatype	 Size		Range
+      ----------------------------------------------------------
+      float       4 byte  	Sufficient for storing 6 to 7 decimal digits	  e.g float a;  10.10
+      double	  8 byte	Sufficient for storing 15 decimal digits	  e.g double a; 10.20
+
+   3. Character:
+      Datatype	 Size		Range
+      ----------------------------------------------------------
+      char       2 byte  	Stores a single characeter/letter or ASCII values	  e.g char a;  'A'
+
+   4. boolean:
+   Datatype	 Size		Range
+      ----------------------------------------------------------
+      boolean    1 bit 	Stores true/false values	        e.g boolean a;  true/false
+
+Identifiers:
+   String empName;  (here empName is identifier)
+   int empId;       (here empId is identifier)
+
+Variables:
+   If we enter any input to the program then the input must be stored in the main memory of the computer in terms of variables.
+   Definition:- Variable is an identifier whose value is changing during execution of the program.
+
+   Rules for writing variables:-
+   - First letter of the variable must an alphabet.   			e.g int empId;
+   - length of the variable in java can be allowed upto 32 characters.   
+   - No special symbols are allowed except underscore(_)                e.g String emp_Name
+   - No reserved words used while declaring variable names.             e.g String if/else/private/public; invalid
+
+Variable declaration:-
+   syntax: datatype variableName1, variableName2;
+
+         int a;
+         int b;
+         int a, b;
+         char c1, c2;
+         String s1, s2;
+
+
+Initialization of Variables:-
+   syntax:- datatype v1=val1, v2=val2;
+   eg. int a=10, b=20;
+
+28-Apr-2021
+===========================================
+*JDK
+  The Java Development Kit (JDK) is a software development environment used for developing Java applications and applets.
+  It includes the Java Runtime Environment (JRE), an interpreter/loader (Java), a compiler (javac), an archiver (jar), a documentation generator (Javadoc) and other tools needed in Java development.
+
+*JRE
+  JRE stands for “Java Runtime Environment” and may also be written as “Java RTE.” The Java Runtime Environment provides the minimum requirements for executing a Java application; it consists of the Java Virtual Machine (JVM), core classes, and supporting files.
+
+*JVM
+  Java Virtual machine(JVM) is a very important part of both JDK and JRE because it is contained or inbuilt in both. Whatever Java program you run using JRE or JDK goes into JVM and JVM is responsible for executing the java program line by line hence it is also known as interpreter.
+   
+  Class Loader Subsystem:-
+
+  It is mainly responsible for three activities. 
+    	- Loading
+	- Linking
+	- Initialization
+
+JVM Memory 
+
+	-Method area: 
+		In the method area, all class level information like class name, immediate parent class name, methods and variables information etc. are stored, including static variables. There is only one method area per JVM, and it is a shared resource.
+	-Heap area:
+		 Information of all objects is stored in the heap area. There is also one Heap Area per JVM. It is also a shared resource.
+	-Stack area:
+		 For every thread, JVM creates one run-time stack which is stored here. Every block of this stack is called activation record/stack frame which stores methods calls. All local variables of that method are stored in their corresponding frame. After a thread 			 terminates, its run-time stack will be destroyed by JVM. It is not a shared resource.
+	-PC Registers:
+ 		 Store address of current execution instruction of a thread. Obviously, each thread has separate PC Registers.
+	-Native method stacks:
+		 For every thread, a separate native stack is created. It stores native method information. 
+
+ Java Program Structure:-
+   -> Comment statement
+   -> package statement
+   -> import statement
+   -> Interface declaration
+   -> abstract classes declaration
+   -> other concrete classes
+   -> main class
+   -> methods (predefined/user defined)
+
+*Comments:-
+  A comment is a statement which explains what the program does or explains the narations of the programs.
+
+  1. Single line comment:
+    // Single line comment     -> C++ style
+    /*single line comment*/    -> C style
+
+  2.Multiline Comment/paragram:
+
+    /*
+	....
+	multiple line comment	
+	...
+    */
+
+  3. document/html comment:
+     /**
+      *
+      *
+      *...*/ 	
+
+
+  javadoc Addnum.java   -> java documentation generation from document comment.
+  javap Addnum          -> java profiler	
+
+29-Apr-2021
+============================================
+*Keywords :- predifined words by programming language and it has some special meaning.
+----------
+1.abstract  2.assert  3.byte 4.break 5.boolean 6.class 7.const 8.catch
+9.case 10.continue 11.char 12.do 13.double 14.default 15.else 16.extends 
+17.enum 18.for 19.float 20.final 21.finally 22.false 23.goto 24.if 25.int
+26.interface 27.implements 28.instanceof 29.long 30.new 31.native 32.package
+33.private 34.protected 35.public 36.return 37.super 38.switch 39.static 
+40.synchronized 41.try 42.this 43.throw 44.throws 45.transient 46.void 47.volatile 48.while
+
+Operators in Java:-
+========================
+1. Unary Operators -> one operator & one operand
+                      e.g. -y, +x
+2. Binary operator -> one operator, two operands
+                      e.g. x-y, x+y
+3. Ternary Operator -. Two Operators & three operands
+                       a>b?c:b;
+
+Types Operators:-
+  
+1. Assigment operator   =  
+    e.g int a = 10;
+
+2. Arithmetic Operator: -,+,*,/,%,++,--
+   e.g int a = b+c;
+
+3. Relational Operator/Comparison operator: >, <, >=, <=, ==, !=
+
+      e.g. if(a>b){}
+
+4. boolean/logical operator: &&, ||, !
+     if(a>b && c>d){}
+
+5. bitwise operator:  &, |, ^, <<, >>, ~
+    e.g int a = a&b;
+
+6. Compound Assignment operator:  +=, -=, *=, /=, %=
+    e.g int a = 10, b = 5;
+            a+=b;
+7. conditional/ternary operator: ?:
+     e.g a>b?c:b;
+
+9. Type operator: instanceof 
+
+A -> B -> C e.g if(c instanceof a)
+
+ A a = new C();
+
+30-Apr-2021
+==========================================
+*Constants In Java
+
+   final:-
+     
+ - If we don't want to change the value of the variable then those variable values must be made as constant.
+  - Definition:-
+               A constant is an identifier whos values can't be changed during execution of the program.
+
+
+      1. Variable level :-
+           e.g. final datatype v1=val1,..vn = valn;
+
+           e.g. final float PI = 3.14f;
+      
+
+      2. Method level:-
+           e.g final returnType methodName(list of formal parameteres){
+		//block of statement;	
+	   }
+    
+      - If we don't want to change the definition of the method then the method definition must be made as constant by using final keyword.
+      - In another words whenever we develop another method which is common for many number of java programmers then such methods are highly recommended to make them as final.
+      Bike bike = new Honda();  // -> CTTI (Compile Time Type Identificatin) RTTI (Runtime Type Identification)
+   
+     * Define method overriding and method overloading?
+      -> Method overriding :- The process of redefining the original method for performing multiple operations is know as method overriding.
+
+         Method  overriding = Method heading is same + method body is different
+
+      -> Method overloading:- The method is said to be overloaded method if and only if method name is same but its signature is different.
+          Signature represents the following.
+           -> No. of parameters.
+           -> Type of parameter
+           -> Order of parameters
+
+       e.g :- 
+              addition(10,20,30);    -> number parameters 3
+              addition(100,200);     -> number paramerters 2
+              addition(100,10.75f);  -> type of parameters
+              addition(10.75f, 100);  -> order or parameters
+
+
+
+
+
