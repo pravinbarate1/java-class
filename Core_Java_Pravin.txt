@@ -357,13 +357,13 @@ A -> B -> C e.g if(c instanceof a)
                A constant is an identifier whos values can't be changed during execution of the program.
 
 
-      1. Variable level :-
+      1. Final Variable level :-
            e.g. final datatype v1=val1,..vn = valn;
 
            e.g. final float PI = 3.14f;
       
 
-      2. Method level:-
+      2. Final Method level:-
            e.g final returnType methodName(list of formal parameteres){
 		//block of statement;	
 	   }
@@ -392,8 +392,56 @@ A -> B -> C e.g if(c instanceof a)
 8-May-2021
 ========================================
 
+     3. Final at class level:-
+        - If we don't want to give the feature of base/parent class to the derived/child class then the base class definition must be made as final.
 
+         Syntax:-  
 
+            final class <class_name>
+            {
+               //class body
+            }
 
+        - Once the class is final whose properties can't be inherited from base class to derived class.
+        - Final class is never participate in inheritance process.
 
+        Note:- 
+             - final variable values can't be modified.
+             - final methods can't be overriden.
+             - final class can't be inheritable/reusable/extendable.
 
+OOPS Feature:-
+===================================================== 
+   1. Procedure Oriented Programming Language.
+     -> C, pascal, COBOL, ADA
+
+   2. Object Oriented Programming Language.
+    -> Small Talk, Lisp, Object Pascal, Object COBOL, C++, Java, .net.
+
+     C++ is partial object oriented.
+     1. Every c++ program can be written like c prog.
+     2. 50% of OOPs principles not satisfied.
+     3. Friend Function.
+
+ OOPS Features:-
+   1. class
+   2. object
+   3. Data Abstraction
+   4. Data Encapsulation
+   5. Inheritance
+   6. Polymorphism
+   7. Dynamic Binding.
+   8. message passing.  
+
+1. class:-
+    Definition:- The process of binding the data members and associated methods in a single unit. This single unit is known as class.
+   
+    - The data members of the class are also known as attributes or properties.
+    - The mehtods of the class are also known as behaviors or accessories.
+
+    - We have 2 categories of methods:
+       1. member method
+         -> A member method is one which is available within the scope of the class and it can access the data of the class.
+ 
+       2. non member method
+       -> A non member method is one which is not available within the scope of the class and it can not access the data members of the class.
