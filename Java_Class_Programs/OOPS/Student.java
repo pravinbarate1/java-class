@@ -4,6 +4,8 @@ public class Student{
      float m1, m2,m3;
      String collegeName;
 
+    static int i=10;
+
      public int getId(){
         return id;
      }
@@ -26,8 +28,13 @@ class Execute{
    public static void main(String [] args){
        Student s = new Student();
 
-       s.buildStudent(1, "Hari", 90.00f, 92.00f,93.00f, "Sinhgad");
+       Student s1 = new Student();
+
+       s.buildStudent(1, "Hari", 91.00f, 92.00f,93.00f, "Sinhgad");
+       s1.buildStudent(2, "Aarti", 90.00f, 92.00f,93.00f, "Sinhgad");
        System.out.println("Student Id: = "+s.getId());
+       System.out.println("Student Id: = "+s1.getId());
+       System.out.println("I = "+Student.i);
 
 
         //Student Id: = 1

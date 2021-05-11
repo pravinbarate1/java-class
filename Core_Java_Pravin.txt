@@ -508,4 +508,30 @@ e.g
               Student s;
               s = new Student();
              
+11-May-2021
+=======================================================
+Types of Data Members:-
+
+   1. Instance/non-static data members :-                                                                
+   -> Instance data members are those whose memory space is created each and every time whenever an obect is created.
+   -> If our class is containing collection of data members and we are placing specific values then those data members are recommended to take as instance data members.
+   -> Programatically to make any data member as instance data member whose declaration should not be preceded by a keyword "static".
+   -> syntax :-  data_typa v1,v2,...vn;
+        e.g int a; float b;
+   -> Each and every instance data member must be accessed with respect to object name.
+      objname.IDM(Instance Data Member).
+   -> The values of instance data members are not sharable.
+   -> Instance data members are also known as object level data members because they depends on object and independent from class name.
+   
+   2. static data members:- 
+   -> Static data members are those whose memory space is created only once when the class is loaded in the main memory irrespective of number of objects are created.
+   -> If our class is containing collection of data members which are containing common values or fixed values then the data members of the class are recommended to take as static data members.
+   -> Programatically to make any data member as static data member whose declaration must be preceded by keyword "static".
+   -> syntax:
+            static data_type v1, v2,..., vn;
+          e.g static int a; static float b;
+   -> Each and every static data member must be accessed with respect to class name.
+       Class_Name.SDM(Static Data Member);
+   -> The values of static data members are always sharable.
+   -> Static data members are also known as class level data members becuase they depends on class and independent from object name.
 
