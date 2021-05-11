@@ -445,3 +445,67 @@ OOPS Feature:-
  
        2. non member method
        -> A non member method is one which is not available within the scope of the class and it can not access the data members of the class.
+
+10-May-2021
+==========================================================
+   Syntax:-
+
+     class <class_name>
+     {
+	data_member declaration;
+        method definition;
+     }
+
+e.g 
+   class Student{
+     int id;
+     String name;
+     float m1, m2,m3;
+     String collegeName;
+
+     public int getNoOfHoursStudy(){
+	return n;
+    }
+   }
+
+2. Object:-
+        1. Instance of a class is know as an object (Instance is nothing but allocating sufficient amount of memory space for the data members of the class).
+
+          Student  s = new Student();
+
+        2. Each and every class variable is known as an object.
+        3. Grouped item is known as an object (Grouped item is a variable or identifier which allows us to store multiple values either of same type or different type or both).
+        4. value form of class is object.
+        5. Blue print of a class is known as an object.
+        6. Real world entities are known as object.
+        7. Logical runtime entity is known as object.
+
+        Datatype           Default Value
+       -------------------------------------------------
+        boolean              false
+        char                 '\u0000'
+        byte                 0
+        short                0
+        int                  0
+        long                 0L
+        float                0.0f
+        double               0.0d
+
+       The operator new internally performs two types of operations:
+          1. allocating sufficient amount of memory space for the data member of the class.
+          2. instantiation of the data member for which memory is allocated.
+
+      Syntax:-
+        1.    
+          <class_name> objectName = new <class_name>;
+        2.
+          <class_name> objectName;
+          objectName = new <class_name>;
+
+        e.g:
+              Student s = new Student;
+             
+              Student s;
+              s = new Student();
+             
+
