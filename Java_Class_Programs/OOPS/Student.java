@@ -23,7 +23,7 @@ public class Student{
 
      }
 }
-class Execute{
+class Execute{ 
 
    public static void main(String [] args){
        Student s = new Student();
@@ -39,6 +39,10 @@ class Execute{
 
         //Student Id: = 1
         // 
+
+   }
+
+   public static void main(int a){
 
    }
 }

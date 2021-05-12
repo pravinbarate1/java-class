@@ -535,3 +535,44 @@ Types of Data Members:-
    -> The values of static data members are always sharable.
    -> Static data members are also known as class level data members becuase they depends on class and independent from object name.
 
+12-May-2021
+=========================================================
+Types of Methods:-
+
+    1. Intance/non-static methods:-
+     -> Instance methods are those which are recommended to perform repeated operations such as reading records from the file, reading records from the DB>
+     -> Programatically instance methods definition should not be preceded by a keyword static.
+        Syntax:-
+               return_type method_name(list of formal parameters if any){
+                  //block of statements
+               }     
+     -> Each and every instance method must be accessed with respect to object name.
+         e.g;-
+              object_name.instanceMethodName();
+
+     -> The result of instance method is not sharable.
+     -> Instance methods aer know as object level methods because they depends on object & independent from class.
+          e.g:-
+                 void getTotal(){
+                    //body of method
+                 }
+    2. static methods:-
+     -> Static methods are those which are recommended to perform one time operations such as opening a file, obtaining DB connection.
+     -> programatically static methods definitions must be preceded by a keyword static.
+       Syntax:-
+               static return_type methodName(list of formal paramters){
+                    //body of the method
+               }
+     -> All the static methods in java must be accessed with respect to class name.
+          e.g:-
+                Class_Name.staticMethodName();
+     -> The results of static methods are always sharable.
+     -> static methods are also know as class level methods because they depends on class name and independent from object.
+        e.g:-
+             public static void main(String [] args){
+                //method body
+             }
+   
+
+
+
