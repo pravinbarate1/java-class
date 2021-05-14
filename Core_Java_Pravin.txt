@@ -554,7 +554,7 @@ Types of Methods:-
      -> Instance methods aer know as object level methods because they depends on object & independent from class.
           e.g:-
                  void getTotal(){
-                    //body of method
+                    //body of methoduntitled:Untitled-1
                  }
     2. static methods:-
      -> Static methods are those which are recommended to perform one time operations such as opening a file, obtaining DB connection.
@@ -573,6 +573,50 @@ Types of Methods:-
                 //method body
              }
    
+14-May-2021
+=============================================
+Rules for instance and static methods:-
 
+Rule 1:
+       One static method can call another static method directly provided both static methods belongs to same class.
 
+Rule 2: 
+        One instance method can call another instance method directly provided both the methods must belong to same class.
 
+Rule 3: 
+        One static method can call another instance/non-static method with respect to an object provided wheather they belongs to same class or different class.
+
+Rule 4:
+        One instance method can call another static method with respect to class name provided wheather they belongs to same class or different class.
+     
+
+Note:- As a part of the class what are all the methods defined by the programmer are known as business logic methods and the block of statements auntitled:Untitled-1vailable in the business logic methods is known as business logic.
+
+length:-
+========
+         Lenght is one of the implicit variable created automatically by the JVM and supplied to every java program for two purposes.
+            1. To find the number of element or size of the array.
+            2. To treat the fundamental arrays as objects because java is one of the pure object oriented programming language.
+
+         Syntax:-
+                  Arrayname.length.
+
+         e.g
+            1. int a{10,20,30};
+               System.out.println("No. of elements = "+a.length);
+
+            2. String s[] = {"abc","pqr","Java"};
+               System.out.println("No. of Names = "+s.length)
+
+               for(int i = 0, i< s.lenght; i++){
+                  System.out.println(s[i]);
+               }
+
+Accessing the Data Dynamically:-
+===============================
+
+         Accessing the data dynamically is nothing but entering the values to the java program at runtime.
+         In Java programming to access the values dynamically we have three approaches they are:
+           1} By using command line arguments
+           2} By using keyboard
+           3} By using properties file (Resource bundle file)       
