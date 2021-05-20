@@ -3,10 +3,10 @@ Core Java
 
 Apr-23-2021
 ===============================
-Standalone Application:- 
+Standalone Application:-
     Any prog runs in the context of local disk, whose results are not sharable.
 
-Distributed Application:- 
+Distributed Application:-
       Those applications which runs in the context of browerand whose results are sharable across the globe.
 
     Client-Server Architecture:-
@@ -22,14 +22,14 @@ Distributed Application:-
             -> Set of server programs
             -> DB layer
             -> Cluster Setup Node
-      N Tier:- 
+      N Tier:-
             -> Set of client programs
             -> Set of firewall programs
             -> Set of server programs
             -> DB layer
             -> Cluster Setup Node
 
-e.g 
+e.g
   Server S/w :-
     Tom Cat   - Apache
     Weblogic  - BEA Corporation
@@ -95,7 +95,7 @@ Features/Busswords of Java:-
 
 4. Portable:-
    - A portable application is one which will run on every operating system and on every processor without considering their vendors and architectures.
-     - The applications of c, c++, pascal etc. are treated as non portable applications.    
+     - The applications of c, c++, pascal etc. are treated as non portable applications.
      - All the Java applications are treated as portable applications.
           According Sun Microsystem.
           Portability = Platform Independent + Architectural Neutral
@@ -115,11 +115,11 @@ e.g:- thread/execution flow main method
   public static void main(String [] args {
     jflasjflasjf
   }
- 
+
 6.Networked:-
    - Java has introduced the capability to develope networked applications, web applications.
    - Java has J2SE and it has capability or API or pacakges to develope network applicaionts.
-     e.g - java.net.*;  ServerSocket ss=new ServerSocket(6666);  
+     e.g - java.net.*;  ServerSocket ss=new ServerSocket(6666);
 
 26-Apr-2021
 =====================
@@ -139,9 +139,9 @@ e.g:- thread/execution flow main method
 
 9. Robust(Strong) :-
     When we write any program in any programming lang. we come across various types of errors.Broadly errors are classified into two types they are:
-     1. Compile time errors:-        
+     1. Compile time errors:-
      2. Runtime errors.
-    
+
 10. Dynamic :-
      Types of memory allocation
       1. Static memory allocation.
@@ -168,7 +168,7 @@ e.g:- thread/execution flow main method
     Object
     Interface
     OOPS concepts(Polymorphism, Abstraction, Encapsulation, Inheritance)
-       
+
 27-Apr-2021
 ===========================================
 Datatypes in Java:-
@@ -211,7 +211,7 @@ Variables:
 
    Rules for writing variables:-
    - First letter of the variable must an alphabet.   			e.g int empId;
-   - length of the variable in java can be allowed upto 32 characters.   
+   - length of the variable in java can be allowed upto 32 characters.
    - No special symbols are allowed except underscore(_)                e.g String emp_Name
    - No reserved words used while declaring variable names.             e.g String if/else/private/public; invalid
 
@@ -240,17 +240,17 @@ Initialization of Variables:-
 
 *JVM
   Java Virtual machine(JVM) is a very important part of both JDK and JRE because it is contained or inbuilt in both. Whatever Java program you run using JRE or JDK goes into JVM and JVM is responsible for executing the java program line by line hence it is also known as interpreter.
-   
+
   Class Loader Subsystem:-
 
-  It is mainly responsible for three activities. 
+  It is mainly responsible for three activities.
     	- Loading
 	- Linking
 	- Initialization
 
-JVM Memory 
+JVM Memory
 
-	-Method area: 
+	-Method area:
 		In the method area, all class level information like class name, immediate parent class name, methods and variables information etc. are stored, including static variables. There is only one method area per JVM, and it is a shared resource.
 	-Heap area:
 		 Information of all objects is stored in the heap area. There is also one Heap Area per JVM. It is also a shared resource.
@@ -259,7 +259,7 @@ JVM Memory
 	-PC Registers:
  		 Store address of current execution instruction of a thread. Obviously, each thread has separate PC Registers.
 	-Native method stacks:
-		 For every thread, a separate native stack is created. It stores native method information. 
+		 For every thread, a separate native stack is created. It stores native method information.
 
  Java Program Structure:-
    -> Comment statement
@@ -282,7 +282,7 @@ JVM Memory
 
     /*
 	....
-	multiple line comment	
+	multiple line comment
 	...
     */
 
@@ -290,21 +290,21 @@ JVM Memory
      /**
       *
       *
-      *...*/ 	
+      *...*/
 
 
   javadoc Addnum.java   -> java documentation generation from document comment.
-  javap Addnum          -> java profiler	
+  javap Addnum          -> java profiler
 
 29-Apr-2021
 ============================================
 *Keywords :- predifined words by programming language and it has some special meaning.
 ----------
 1.abstract  2.assert  3.byte 4.break 5.boolean 6.class 7.const 8.catch
-9.case 10.continue 11.char 12.do 13.double 14.default 15.else 16.extends 
+9.case 10.continue 11.char 12.do 13.double 14.default 15.else 16.extends
 17.enum 18.for 19.float 20.final 21.finally 22.false 23.goto 24.if 25.int
 26.interface 27.implements 28.instanceof 29.long 30.new 31.native 32.package
-33.private 34.protected 35.public 36.return 37.super 38.switch 39.static 
+33.private 34.protected 35.public 36.return 37.super 38.switch 39.static
 40.synchronized 41.try 42.this 43.throw 44.throws 45.transient 46.void 47.volatile 48.while
 
 Operators in Java:-
@@ -317,8 +317,8 @@ Operators in Java:-
                        a>b?c:b;
 
 Types Operators:-
-  
-1. Assigment operator   =  
+
+1. Assigment operator   =
     e.g int a = 10;
 
 2. Arithmetic Operator: -,+,*,/,%,++,--
@@ -340,7 +340,7 @@ Types Operators:-
 7. conditional/ternary operator: ?:
      e.g a>b?c:b;
 
-9. Type operator: instanceof 
+9. Type operator: instanceof
 
 A -> B -> C e.g if(c instanceof a)
 
@@ -351,7 +351,7 @@ A -> B -> C e.g if(c instanceof a)
 *Constants In Java
 
    final:-
-     
+
  - If we don't want to change the value of the variable then those variable values must be made as constant.
   - Definition:-
                A constant is an identifier whos values can't be changed during execution of the program.
@@ -361,17 +361,17 @@ A -> B -> C e.g if(c instanceof a)
            e.g. final datatype v1=val1,..vn = valn;
 
            e.g. final float PI = 3.14f;
-      
+
 
       2. Final Method level:-
            e.g final returnType methodName(list of formal parameteres){
-		//block of statement;	
+		//block of statement;
 	   }
-    
+
       - If we don't want to change the definition of the method then the method definition must be made as constant by using final keyword.
       - In another words whenever we develop another method which is common for many number of java programmers then such methods are highly recommended to make them as final.
       Bike bike = new Honda();  // -> CTTI (Compile Time Type Identificatin) RTTI (Runtime Type Identification)
-   
+
      * Define method overriding and method overloading?
       -> Method overriding :- The process of redefining the original method for performing multiple operations is know as method overriding.
 
@@ -383,7 +383,7 @@ A -> B -> C e.g if(c instanceof a)
            -> Type of parameter
            -> Order of parameters
 
-       e.g :- 
+       e.g :-
               addition(10,20,30);    -> number parameters 3
               addition(100,200);     -> number paramerters 2
               addition(100,10.75f);  -> type of parameters
@@ -395,7 +395,7 @@ A -> B -> C e.g if(c instanceof a)
      3. Final at class level:-
         - If we don't want to give the feature of base/parent class to the derived/child class then the base class definition must be made as final.
 
-         Syntax:-  
+         Syntax:-
 
             final class <class_name>
             {
@@ -405,13 +405,13 @@ A -> B -> C e.g if(c instanceof a)
         - Once the class is final whose properties can't be inherited from base class to derived class.
         - Final class is never participate in inheritance process.
 
-        Note:- 
+        Note:-
              - final variable values can't be modified.
              - final methods can't be overriden.
              - final class can't be inheritable/reusable/extendable.
 
 OOPS Feature:-
-===================================================== 
+=====================================================
    1. Procedure Oriented Programming Language.
      -> C, pascal, COBOL, ADA
 
@@ -431,18 +431,18 @@ OOPS Feature:-
    5. Inheritance
    6. Polymorphism
    7. Dynamic Binding.
-   8. message passing.  
+   8. message passing.
 
 1. class:-
     Definition:- The process of binding the data members and associated methods in a single unit. This single unit is known as class.
-   
+
     - The data members of the class are also known as attributes or properties.
     - The mehtods of the class are also known as behaviors or accessories.
 
     - We have 2 categories of methods:
        1. member method
          -> A member method is one which is available within the scope of the class and it can access the data of the class.
- 
+
        2. non member method
        -> A non member method is one which is not available within the scope of the class and it can not access the data members of the class.
 
@@ -456,7 +456,7 @@ OOPS Feature:-
         method definition;
      }
 
-e.g 
+e.g
    class Student{
      int id;
      String name;
@@ -496,7 +496,7 @@ e.g
           2. instantiation of the data member for which memory is allocated.
 
       Syntax:-
-        1.    
+        1.
           <class_name> objectName = new <class_name>;
         2.
           <class_name> objectName;
@@ -504,15 +504,15 @@ e.g
 
         e.g:
               Student s = new Student;
-             
+
               Student s;
               s = new Student();
-             
+
 11-May-2021
 =======================================================
 Types of Data Members:-
 
-   1. Instance/non-static data members :-                                                                
+   1. Instance/non-static data members :-
    -> Instance data members are those whose memory space is created each and every time whenever an obect is created.
    -> If our class is containing collection of data members and we are placing specific values then those data members are recommended to take as instance data members.
    -> Programatically to make any data member as instance data member whose declaration should not be preceded by a keyword "static".
@@ -522,8 +522,8 @@ Types of Data Members:-
       objname.IDM(Instance Data Member).
    -> The values of instance data members are not sharable.
    -> Instance data members are also known as object level data members because they depends on object and independent from class name.
-   
-   2. static data members:- 
+
+   2. static data members:-
    -> Static data members are those whose memory space is created only once when the class is loaded in the main memory irrespective of number of objects are created.
    -> If our class is containing collection of data members which are containing common values or fixed values then the data members of the class are recommended to take as static data members.
    -> Programatically to make any data member as static data member whose declaration must be preceded by keyword "static".
@@ -545,7 +545,7 @@ Types of Methods:-
         Syntax:-
                return_type method_name(list of formal parameters if any){
                   //block of statements
-               }     
+               }
      -> Each and every instance method must be accessed with respect to object name.
          e.g;-
               object_name.instanceMethodName();
@@ -572,7 +572,7 @@ Types of Methods:-
              public static void main(String [] args){
                 //method body
              }
-   
+
 14-May-2021
 =============================================
 Rules for instance and static methods:-
@@ -580,18 +580,21 @@ Rules for instance and static methods:-
 Rule 1:
        One static method can call another static method directly provided both static methods belongs to same class.
 
-Rule 2: 
+Rule 2:
         One instance method can call another instance method directly provided both the methods must belong to same class.
 
-Rule 3: 
+Rule 3:
         One static method can call another instance/non-static method with respect to an object provided wheather they belongs to same class or different class.
 
 Rule 4:
         One instance method can call another static method with respect to class name provided wheather they belongs to same class or different class.
-     
+
 
 Note:- As a part of the class what are all the methods defined by the programmer are known as business logic methods and the block of statements auntitled:Untitled-1vailable in the business logic methods is known as business logic.
 
+
+20-May-2021
+=====================================================
 length:-
 ========
          Lenght is one of the implicit variable created automatically by the JVM and supplied to every java program for two purposes.
@@ -602,7 +605,7 @@ length:-
                   Arrayname.length.
 
          e.g
-            1. int a{10,20,30};
+            1. int a[] ={10,20,30};
                System.out.println("No. of elements = "+a.length);
 
             2. String s[] = {"abc","pqr","Java"};
@@ -619,4 +622,22 @@ Accessing the Data Dynamically:-
          In Java programming to access the values dynamically we have three approaches they are:
            1} By using command line arguments
            2} By using keyboard
-           3} By using properties file (Resource bundle file)       
+           3} By using properties file (Resource bundle file)
+
+
+1) By using Command Line arguments:-
+ Q. Why Java main method takes array of objects of  String class as a parameters?
+ => Every main method takes array of objects of String class because to accept command line arguments.
+    The number of values which we are passing to the Java Program from the command prompt are know as command line arguments.
+
+   e.g :> java     SumDemo    60 70
+          -----    -------    ---------
+          command  Java Prog. Command Line arguments
+
+    -> When we enter any command line arguments to the Java program then they are by default treated as String data.
+    -> All the command line arguments are by default passing to main method.
+    -> All the command line arguments must be holding main method by taking a String parameter.
+    -> Since command line arguements are unlimited/dynamic main method is holding all the command line arguments in an array variable in a String type.
+    -> While we are using array variable of String type in the main method one can't specify the size of the array.
+    -> Since Java is pure object oriented programming String data which is available in main method must be represented by using predefined class called String.
+    -> Therefore every main method must take array of objects of String clas for holding command line arguments.
