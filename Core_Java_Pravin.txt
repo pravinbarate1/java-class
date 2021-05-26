@@ -641,3 +641,46 @@ Accessing the Data Dynamically:-
     -> While we are using array variable of String type in the main method one can't specify the size of the array.
     -> Since Java is pure object oriented programming String data which is available in main method must be represented by using predefined class called String.
     -> Therefore every main method must take array of objects of String clas for holding command line arguments.
+
+21-May-2021
+===================
+Converting String data into fundamental or numerical data:-
+  - When we pass any command line arguments to the java program, by default the command line arguments are treated as String data.
+  - We know that on String data one can't perform numerical manipulations hence it is highly desirable to convert String data into numerical or fundamental data.
+  - The following table gives fundamental datatype corresponding wrapper class and conversion method from String data to fundamental data.
+
+Datatype                Wrapper Class Name                 Conversion method from String to fundamental data_type
+-----------------------------------------------------------------------------------------------------------------------------
+byte                    Byte                                public static byte parseByte(String)
+short                   Short                               public static byte parseShort(String)
+int                     Integer                             public static byte parseInt(String)
+long                    Long                                public static byte parseLong(String)
+float                   Float                               public static byte parseFloat(String)
+double                  Double                              public static byte parseDouble(String)
+char                    Character                           public static byte parseChar(String)
+boolean                 Boolean                             public static byte parseBoolean(String)
+
+In general each & every wrapper class is containing the following generalized predefined method for converting string data into fundamental data.
+
+ e.g :
+       public static XXX parseXXX(String)
+      ------------------------------------
+      Here XXX represents any fundamental datatype.
+
+      e.g
+         String s[] = {"10","20"};
+         SOP(s[0]+s[1]);
+
+         int x = Integer.parseInt(s[0]);
+         int y = Integer.parseInt(s[1]);
+
+         int z = x + y;
+         sop("Sum = "+z);
+         sop("Sum = "+x+y);
+
+26-May-2021
+=====================================
+-> Write a Java Program which will perform interchanging(Swap) of two values.
+-> Write a Java Program to print the multiplication table of given number.
+-> Write a Java Program to calculate factorial of a given number.
+-> Write a Java Program to decide whether given number is prime or not.
