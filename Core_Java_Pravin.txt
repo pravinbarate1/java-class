@@ -678,9 +678,12 @@ In general each & every wrapper class is containing the following generalized pr
          sop("Sum = "+z);
          sop("Sum = "+x+y);
 
-26-May-2021
+29-May-2021
 =====================================
 -> Write a Java Program which will perform interchanging(Swap) of two values.
 -> Write a Java Program to print the multiplication table of given number.
--> Write a Java Program to calculate factorial of a given number.
--> Write a Java Program to decide whether given number is prime or not.
+-> Write a Java Program to calculate factorial of a given number.                 // 5   5 * 4 * 3 * 2 * 1  = 120  
+-> Write a Java Program to decide whether given number is prime or not.           // a number which is divided by 1 or itself.  e.g. 2,3,5, 11 , 13 , 17,19
+
+=====================================
+Constructors in Java:-

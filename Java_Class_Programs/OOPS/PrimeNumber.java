@@ -6,9 +6,9 @@ class PrimeNumber{
     }
 
     String decide(){
-        int i;
-        for(i=2;i<n;i++){
-            int r = n%i;
+        int i;             // n = 3, i=0; i = 2, 
+        for(i=2;i<n;i++){    i<n -> 2<3
+            int r = n%i;   // r = n%i -> 3%2
             if(r==0){
                 break;
             }

@@ -2,15 +2,15 @@ class Swap{
 
     int a, b;
 
-    void set(int x, int y){
+    void set(int x, int y){ //a = 10 b =20        
         a = x;
         b = y;
     }
 
     void interchange(){
-        int t = a;
-        a = b;
-        b = t;
+        int t = a;   // t = 10
+        a = b;       //a = 20
+        b = t;       // b = 10
     }
 
     void disp(){
@@ -23,8 +23,8 @@ class Swap{
 class SwapDemo{
 
     public static void main(String [] args){
-        int x = Integer.parseInt(args[0]);
-        int y = Integer.parseInt(args[1]);
+        int x = Integer.parseInt(args[0]);  // x = 10
+        int y = Integer.parseInt(args[1]);  // y = 20
 
         Swap so = new Swap();
 
