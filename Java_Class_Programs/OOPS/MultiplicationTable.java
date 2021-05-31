@@ -14,13 +14,13 @@ class MultiplicationTable{
 
 class MulExecution{
     public static void main(String [] args){
-        if(args.length != 1){
+        if(args.length != 1){   // 1 != 1  false 1 = 1 !true false
             System.out.println("Please enter one value..");
         }else{
 
             int x = Integer.parseInt(args[0]);
 
-            if(x <= 0){
+            if(x <= 0){   //2 <= 0  false
                 System.out.println(x + "is invalid");
             }else{
                 MultiplicationTable multiplicationTable = new MultiplicationTable();

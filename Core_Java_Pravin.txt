@@ -685,5 +685,45 @@ In general each & every wrapper class is containing the following generalized pr
 -> Write a Java Program to calculate factorial of a given number.                 // 5   5 * 4 * 3 * 2 * 1  = 120  
 -> Write a Java Program to decide whether given number is prime or not.           // a number which is divided by 1 or itself.  e.g. 2,3,5, 11 , 13 , 17,19
 
+31st May 2021
 =====================================
+
 Constructors in Java:-
+
+  -> A constructor is a special member method which is automatically calling by the JVM for placing our own values whenever an object is created without placing the default values.
+  -> The basic purpose of constructor in Java is to initialize an object.
+
+* Advantages of Constructors:-
+  1. Constructors eliminates placing of default values.
+  2. Constructors eliminates calling ordinary methods explicitly
+
+* Rules/properties/characteristics of Constructors:-
+  1. When we use the constructors as a part of our Java program we need to follow rules.
+  2. Constructor will be called automatically whenever an object is created, the name of the constructor must be similar to class name.
+  3. Constructors should not return an value even void also(If we write void as a return type of the construcotr then it is treated as ordinary method.)
+  4. Constructor should not be static because constructors must be called each and every time as and even obejct is created.
+  5. Contructors will not be inherited from one class to another class because every constructor of a class must be used for initializing data members of the same class but not other class data members.
+  6. A constructor can be private provided an object of that class can not be created in the context of some other classes.
+
+* Types of Constructor:-
+    In Java programming we have two types of constructors they are:
+     1. Default/parameter less / zero argument constructor
+     2. Parameterized constructor.
+
+     1. Default Constructor:-
+           Test t1 = new Test();
+
+       - A default constructor is one which never takes any parameter.
+       - Default constructor is highly recommended to take place same values in different obejct of same class.
+
+       Syntax:-
+
+            class <class_name>{
+		//statments
+
+                <class_name>(){   // default constructor.
+			//block of statments
+		}
+	    }
+
+
