@@ -727,3 +727,73 @@ Constructors in Java:-
 	    }
 
 
+2nd June 2021
+==============================
+
+Rule 1: 
+    - Whenever we create an object only with default constructor defining the default constructor is optional.
+    - If we are not defining default constructor then JVM will call it's own constructor called System Defined default constructor and it is placing default value depends on data members of class.
+    - If we define our own default constructor then JVM will call user/programmer defined default constructor for placing our own values.
+
+
+ 2. Parameterised Constructor:-
+   - A parameterised constructor is one which always takes parameters.
+   - If we want to place different values for different objects of same class then we must use parameterized constructor.
+
+
+   Syntax:- 
+          class <class_name>
+          {
+             <classname> (list of formal parameters)
+             {
+             }  
+          }  
+
+
+Rule 2:-
+    - Whenever we create an object with parameterised constructor, defining the parameterised constructor is mandatory.
+
+Rule 3:-
+    - Whenever we create multiple objects with both default & parameterised constructor it is mandatory for the Java programmer to define both the constructors otherwise we get compile time error.
+
+* Overloaded Constructors:-
+    - A constructor is said to be overloaded if an only if constructor name is same but its signature is different.
+
+    Signature represents:
+      -> No. of parameters
+      -> Type of parameters
+      -> order of parameters
+
+   e.g.
+      Test t1 = new Test(10,20);
+      Test t2 = new Test(100);
+      Test t3 = new Test(10.25f, 20.75f);
+      Test t4 = new Test(100, 10.75f);
+      Test t5 = new Test(10.75f, 200);
+
+   In the above example the constructor Test() is known as overloaded constructor.
+  
+ * Object Paramterised constructor:-
+   - An object parameterised costructor is one which always takes objects as parameter.
+   - Object parameterised constructor is used for copying the content of one object into another object provided both the obejects must belongs to same type.
+   
+    - Let us consider the following:-
+
+        Test t2 = new Test(10,20); -> (1)
+        Test t4 = new Test (t2);   -> (2)
+
+    - The statement (2) represents object parameterised constructor i.e. it copies the content of t2 into an object t4. 
+    - The object t2 and t4 belongs to same type i.e. Test.
+    - Therefore in Java programming to copy the content of one object into another object, we use the concept of object paramterised constructor which is exactly funtioning like copy constructor of C++.
+
+    
+
+
+
+
+      
+
+
+
+
+
