@@ -786,11 +786,123 @@ Rule 3:-
     - The object t2 and t4 belongs to same type i.e. Test.
     - Therefore in Java programming to copy the content of one object into another object, we use the concept of object paramterised constructor which is exactly funtioning like copy constructor of C++.
 
-    
+
+3-June-2021
+==============================================
+
+* this keyword:-
+ - This is one of the implicit keyword/object created by the JVM and supplied every Java program for two purposes they are :
+            1. It points to current class object.
+            2. Whenever formal parameters and data memebers of the class are similar then JVM gets and ambiguity (not having clarity to identify which are data member of the class and which are formal parameteres.) 
+ - In order to differenciate between formal parameters and datamembers of the class, as a Java programmer data members of the class must be preceeded by a keyword "this          ".
+
+       Syntax:
+              this.currentclass data member;
+         
+- In Java programming operator overloading facility is not avaibale but we can solve all the problems with a simple concept of methods.
+- A method is not only returning fundmental values and predefined classes but alos returns user defined class name as return type.   
 
 
+* this(), this(...):-
+   - We know that one method can call another method either with respect to object or with respect to class i.e. we can esatblish the communication between multiple methods.
+   - Similarly, in order to establish the communication between constructors  of the current class we must use two types of functions. They are:
+            1. this()
+            2. this(...)
+
+  1. this():-
+            It is used for calling current class default constructor from current class parameterised constructors.
+  2. this(...):-
+            It is used for calling the current class parameterised constructors from other category constructors of same class.
+
+   Rules:-
+     1) When we ae using either this() or this(...) in the current class constructors they must be used always as a first executable statement otherwise we get compile time errors.
+     2) No cycle to be formed but recommend to form only path when we are using either this() or this(...) in the current class constructors.
+     3) No consecutive this(), this(...) to be used in the current class constructors because every this(), this(...) want ot have as a first executable statement in the current class constructors.
+             
+e.g. :- 
 
 
+class ThisObjectMethod{
+    int a,b;
+
+    ThisObjectMethod(){  // ----- (2)
+        this(1000);  // control goes to (3)
+
+        System.out.println("Default Constructor");
+
+        a = 1;
+        b = 2;
+
+        System.out.println("Val of a = "+ a);
+        System.out.println("Val of b = "+ b);
+    }
+
+    ThisObjectMethod(int x){  // ----- (3)
+        System.out.println("Single param Constructor");
+
+        a = x;
+        b = x;
+
+        System.out.println("Val of a = "+ a);
+        System.out.println("Val of b = "+ b);
+    }
+
+    ThisObjectMethod(int x){  // ----- (3)
+        System.out.println("Single param Constructor");
+
+        a = x;
+        b = x;
+
+        System.out.println("Val of a = "+ a);
+        System.out.println("Val of b = "+ b);
+    }
+
+    ThisObjectMethod(int x, int y){  // ----- (1)
+        this();      // control goes to (1)
+
+        System.out.println("Two param Constructor");
+
+        a = x;
+        b = y;
+
+        System.out.println("Val of a = "+ a);
+        System.out.println("Val of b = "+ b);
+    }
+}
+
+class ThisObjectMethodExec{
+
+    public static void main(String [] args){ ThisObjectMethod(int x){  // ----- (3)  single paramerterised constructor x =100
+
+        System.out.println("Single param Constructor");
+
+        a = x;  // a = 1000
+        b = x;  // b = 1000
+
+        ThisObjectMethod tom = new ThisObjectMethod(100, 200); // control goes to (1)
+    }
+}
+
+    TOP                                   TOP
+   E | (3) Default Constructor (3)         /\
+   x | (2) Single param Constructor (2)     |
+   e | (1) Two param Constructor (1)        |   Calling
+   c \/                                     |
+   u Botton                                 Bottom
+   tion ThisObjectMethod(int x){  // ----- (3)  single paramerterised constructor x =100
+
+        System.out.println("Single param Constructor");
+
+        a = x;  // a = 1000
+        b = x;  // b = 1000
+
+
+In the above program, constructors are calling in the order of 1,2,3 (increasing order and executing in the order of 3,2,1 (decreasing order)).
+In general, in any Java program constructors are calling from bottom to top and executing from top to bottom.
+
+Note:- Whenever we use two consecutive this() and this(...) in the current classs constructor syntacticall which is wrong but it can be solved programmatically by using above rule.
+
+Note:- Whenever we want to have multiple values in the same object, it is recommended to establish the communication between multiple construcotrs of the same class by making use of this() and this(...).
       
 
 
