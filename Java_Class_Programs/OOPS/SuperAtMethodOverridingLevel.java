@@ -22,7 +22,14 @@ class Derived extends IBase{
 class SuperAtMethodOverridingLevel{
     public static void main(String [] args){
         Derived d = new Derived();
-
         d.show();
+        
+        IBase ibase = new IBase();
+
+        ibase.show();
+
+        IBase ibase = new Derived();
+        ibase.show()
+        
     }
 }
